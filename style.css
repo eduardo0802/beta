@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: hsl(184, 73%, 12%);
+  }
+  
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+  .box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    text-align: center;
+  }
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+
+  body{
+      margin: 0;
+      padding: 0;
+      font-family: monserrat;
+      background: #03001e;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+      background-size: 400% 400%;            
+      animation: bganimation 15s infinite;
+    }
+
+    @keyframes bganimation{
+      0%{
+          background-position: 0% 50%;
+      }
+      50%{
+          background-position: 100% 50%; 
+      }
+      100%{
+          background-position: 0% 50%;
+      }
+  }
+
+  .header{
+    height: 100px;
+    background: black;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .logo{
+    line-height: 100px;
+    float: left;
+    text-transform: uppercase;
+  }
+  
+  .menu{
+    float: right;
+    line-height: 100px;
+  }
+  .menu a{
+    border: none;
+    margin: 20px;
+    padding: 24px;
+    width: 220px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.6s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #514A9D;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  
+  .content{
+    padding: 0 20px;
+  }
+  .content img{
+    width: 100%;
+    max-width: 450px;
+    margin: 20px 0;
+  }
+  .content p{
+    text-align: center;
+  }
+  
+  @media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.7s;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+    }
+    .hide-menu-btn{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+    #chk:checked ~ .menu{
+      right: 0;
+    }
+  }
+
+
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+  
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    width: 100%;
+    height: 300vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  .gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: black;
+    bottom: 40px;
+    right: 50px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
+  
+
+.CEO{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: black;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.CEO{
+  background: #fff;
+  padding: 30px;
+}
+.CEO img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navBar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  color: black;
+  font-size: 48px;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* navbar */
+
+nav {
+  height: 70px;
+  line-height: 70px;
+}
+
+nav a img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+
+nav a:nth-child(2) {
+  float: right;
+}
+
+/* header */
+
+header {
+  margin: 100px 0 200px 120px;
+}
+
+header p {
+  width: 60%;
+  margin-top: 10px;
+}
+
+/* .work */
+
+.work {
+  text-align: center;
+  width: 100%;
+}
+
+.work img {
+  margin: 1%;
+  width: 45%;
+}
+
+/* header2 */
+
+.header2 {
+  margin: 130px 0 80px 40px;
+}
+
+/* .work2 */
+.work2 {
+  width: 100%;
+  text-align: center;
+}
+
+.work2 img {
+  margin: 1%;
+  width: 94%;
+}
+
+/* footer */
+footer p {
+  text-align: center;
+  color: grey;
+  margin: 60px auto;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+  header {
+        text-align: left;
+        margin: 100px 0 100px 30px;
+  }
+
+  header h1 {
+        font-size: 36px;
+  }
+
+  header p {
+        font-size: 12px;
+        width: 90%;
+  }
+
+  .work img {
+        margin: 2%;
+        width: 90%;
+  }
+
+  .header2 {
+        margin: 130px 0 40px 12px;
+  }
+
+  .header2 h1 {
+        font-size: 36px;
+  }
+
+  .header2 p {
+        font-size: 12px;
+        width: 90%;
+  }
+
+  .work2 img {
+        margin: 2%;
+  }
+}
